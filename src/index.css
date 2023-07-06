@@ -1,0 +1,165 @@
+:root {
+  --container-background: rgb(193, 133, 5);
+  --text-heading: #bfbebe;
+  --list-background: rgb(220, 217, 190);
+  --h3-background: #ae9665;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.container {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 70rem;
+  margin: 0 auto;
+  border: 1px solid #444;
+  position: relative;
+  background-color: rgba(160, 150, 89, 0.872);
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  background-color: var(--container-background);
+  margin: 0;
+  color: var(--text-heading);
+}
+.image-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+
+  /* align-items: center; */
+  justify-items: center;
+}
+.image-box img {
+  border-radius: 0 0 1rem 1rem;
+  position: relative;
+}
+
+.image-div {
+  position: relative;
+  width: 40rem;
+}
+.image-div img {
+  width: 100%;
+}
+.age {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 2px;
+  color: rgba(72, 64, 56, 0.5);
+}
+
+/*
+/////////////////
+ BROILER LIST STYLE 
+ ////////////
+ */
+
+.broiler-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+
+  margin-bottom: 2rem;
+  background-color: var(--list-background);
+  border-radius: 1rem;
+  transition: transform 1s;
+}
+.broiler-list img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.broiler-list:hover {
+  transform: scale(1.1);
+}
+h3 {
+  font-size: 1.4rem;
+  background-color: var(--h3-background);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.button {
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: rgb(38, 37, 37);
+  color: #fff;
+  margin-left: 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  transition: all 0.3s ease-in;
+  font-family: sans-serif;
+  margin-bottom: 1rem;
+  z-index: 1000;
+}
+
+span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.button:hover {
+  background-color: #c2c2c0;
+  color: #272727;
+  font-weight: 600;
+}
+.form {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  margin-left: 2rem;
+  background-color: rgb(223, 231, 178);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 73%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+select {
+  margin-bottom: 1rem;
+}
+
+.filter {
+  filter: blur(0.8rem);
+  /* opacity: 0.1; */
+}
+.hidden {
+  display: none;
+}
+.page-container {
+  margin-left: 4rem;
+  height: 5rem;
+  width: 15rem;
+  position: relative;
+}
+
+.btn {
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #d8b774;
+  position: absolute;
+}
+.next {
+  right: 1rem;
+}
+.footer {
+  text-align: center;
+}
